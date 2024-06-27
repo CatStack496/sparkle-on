@@ -14,7 +14,7 @@ def sparkleGif():
 @app.route('/')
 def sparkleOn():
     image = sparkleGif()
-    return send_file(image, mimetype='image/png')
+    return send_file(image, mimetype='image/gif')
 
 if __name__ == '__main__':
     app.run(debug=True)
